@@ -44,6 +44,18 @@ class Bank:
                 return f"You withdrawn USD{amount} your current balance= USD{self.amount}"
 
 
+    def CheckBalance(self):
+
+        return f" Your current balance = USD{self.amount}"
+
+
+        
+
+
+
+    
+
+
         
             
             
