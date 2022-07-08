@@ -49,7 +49,31 @@ class Bank:
         return f" Your current balance = USD{self.amount}"
 
 
+
+class CreateBankAccount(Bank):
+
+    def __init__(self,fullName):
+
+        Bank.__init__(self)
+
+        self.fullName= fullName
+        self.accountType= input("choose account type(checking/savings):")
+
         
+
+    def __str__(self):
+
+        message= f"welcome to {self._bankName} bank {self.fullName}!! \n you successfully opened a {self.accountType} account"
+        
+        message2= "You can now start making your first deposit!!!"
+        
+        return f"{message}\n{message2}"
+        
+
+
+
+
+
 
 
 
